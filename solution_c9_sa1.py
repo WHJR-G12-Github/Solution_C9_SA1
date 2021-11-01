@@ -20,8 +20,10 @@ while True:
   if groundx<-550:
       # Resetting the value of 'groundx' back to 0
       groundx=0
-      
+    
+  # Displaying the ground image at [groundx,550]    
   screen.blit(images["ground"],[groundx,550])
+    
   screen.blit(images["bird"],bird)
   
   for event in pygame.event.get():
